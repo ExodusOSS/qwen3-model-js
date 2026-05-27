@@ -1,0 +1,32 @@
+{
+  "name": "@exodus/qwen3-model-js",
+  "version": "0.1.0",
+  "description": "Pinned Qwen3 1.7B Q8_0 GGUF: artifact metadata, SHA256 verification, and streaming downloader. Declares node-llama-cpp as a peer so consumers pick a compatible runtime.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.js'"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "peerDependencies": {
+    "node-llama-cpp": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "node-llama-cpp": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": false
+  }
+}
